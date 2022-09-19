@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HomeNavbar />
+      <HomeView />
   </div>
 </template>
 
@@ -28,7 +28,8 @@
 </style>
 
 <script>
-  import HomeNavbar from '@/components/HomeNavbar';
+
+  import HomeView from '@/views/HomeView.vue'
 
 export default {
   name: 'App',
@@ -36,7 +37,7 @@ export default {
 
   },
   components:{
-    HomeNavbar
+    HomeView
   }
 }
 </script>
