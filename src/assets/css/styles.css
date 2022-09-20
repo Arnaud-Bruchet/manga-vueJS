@@ -11883,3 +11883,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   border-color: red; 
   box-shadow: 0px 0px 50px 3px darkorange;
   }
+nav a.router-link-exact-active{
+  color: #fff;
+  text-shadow: 1px 1px 15px black, -1px -1px 15px black;
+}
+.router-manga router-link-active{
+  text-decoration: none;
+}

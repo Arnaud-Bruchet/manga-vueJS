@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeNavbar from '../components/HomeNavbar.vue'
-// import HomeView from '../views/HomeView.vue'
+// import HomeView from '@/views/HomeView.vue'
+// import OtherPagesNavbar from '../components/OtherPagesNavbar.vue'
 
 Vue.use(VueRouter)
 
@@ -9,9 +9,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component:{
-      HomeNavbar,
-    } 
+    component: () => import(/* webpackChunkName: "about" */ '../views/HomeView.vue')
   },
   {
     path: '/about',
