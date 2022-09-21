@@ -74,7 +74,7 @@
                 Ok
               </div>
             </div>
-            <div class="col-12">
+            <div class="col-12 mx-auto">
               <button @click='handleButton' class="btn btn-primary" type="button">{{ onEdit ? 'Editer' :
               'Créer'}}</button>
             </div>
@@ -103,7 +103,8 @@ export default {
       'Seinen',
       'Josei',
       'Yuri',
-      'Yaoi'
+      'Yaoi',
+      'Manhwa'
     ],
     manga: {
       name: '',
